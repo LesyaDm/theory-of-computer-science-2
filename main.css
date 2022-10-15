@@ -1,0 +1,51 @@
+h2{
+  text-align: center;
+}
+
+p:nth-child(even){
+  margin: 0;
+}
+
+.hartley_formula{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shannons_formula{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form{
+  display: flex;
+  align-items: flex-start;
+}
+
+.calculations button{
+  margin: 0 24px;
+}
+
+.formula, .arr_n_count{
+  display: flex;
+}
+
+.sum{
+  font-size: 20px;
+}
+
+.max, .min{
+  font-size: 14px;
+  margin-left: -40px;
+}
+
+.arr_n_res{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#result_i_sh{
+  text-align: center;
+}

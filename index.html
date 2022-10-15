@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Лабораторная 2</title>
+  <script src="main.js"></script>
+</head>
+<body>
+  <h2>Задание 1</h2>
+  <div class="hartley_formula">
+    <p>Формула Хартли</p>
+    <p>I(N) = log<sub>2</sub>N</p>
+    <div class="calculations">
+      <form>
+        N = <input type="text" id="value_N" value="32" size="10">
+        <button type="button" onclick="getResHartley()" >Посчитать</button>
+        I = <textarea type="text" id="value_I" readonly></textarea>
+      </form>
+    </div>
+    
+  </div>
+  <div class="shannons_formula">
+    <p>Формула Шеннона</p>
+    
+    <div class="max">N</div>
+      <div class="formula">
+      <span>I = - </span> <div class="sum">&#8721;</div> <span>p<sub>i</sub> * log<sub>2</sub>p<sub>i</sub></span> 
+    </div>
+    <div class="min">i = 1</div>
+    
+    <div class="calculations">
+      <form>
+        P[i] = <input type="text" id="value_Pi" value="" size="10">
+        <button type="button" onclick="getCalcSh()" >Добавить</button>
+        <div class="arr_n_res">
+          <div class="arr_n_count">
+            <span>N= </span><div id="result_n"> 0</div>
+          </div>
+          <textarea type="text" id="value_arr" readonly></textarea>
+      </div>
+      </form>
+      <div id="result_i_sh">I = 0</div>
+    </div>
+  </div>
+
+
+  <!-- <h2>Дополнительное задание</h2>
+  <div> 
+    <form>
+      <button type="button" onclick="getDop()" >Вывести избыточность сообщения.</button>
+      <div id="result4"></div>
+    </form>
+  </div> -->
+</body>
+</html>
