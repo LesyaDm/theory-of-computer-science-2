@@ -20,8 +20,10 @@ function getCalcSh(){
     N.push(valuePi);
     document.getElementById('result_n').innerHTML = N.length;
     document.getElementById('value_arr').innerHTML = N;
+    resShennon = 0;
     for (let i = 0; i < N.length; i++){
-      resShennon += (N[i] != 0) ? N[i] * Math.log2(N[i]) : 0;
+      resShennon +=  N[i] * Math.log2( N[i]);
+      console.log(resShennon);
     }
     document.getElementById('result_i_sh').innerHTML = "I = " + -resShennon;
   }
